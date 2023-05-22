@@ -106,8 +106,8 @@ output "igw_arn" {
 ################################################################################
 
 output "public_subnets" {
-  description = "List of IDs of public subnets"
-  value       = aws_subnet.public[*].id
+  description = "List of public subnets"
+  value       = aws_subnet.public
 }
 
 output "public_subnet_arns" {
@@ -160,8 +160,8 @@ output "public_network_acl_arn" {
 ################################################################################
 
 output "private_subnets" {
-  description = "List of IDs of private subnets"
-  value       = aws_subnet.private[*].id
+  description = "List of private subnets"
+  value       = aws_subnet.private
 }
 
 output "private_subnet_arns" {
@@ -214,8 +214,8 @@ output "private_network_acl_arn" {
 ################################################################################
 
 output "outpost_subnets" {
-  description = "List of IDs of outpost subnets"
-  value       = aws_subnet.outpost[*].id
+  description = "List of outpost subnets"
+  value       = aws_subnet.outpost
 }
 
 output "outpost_subnet_arns" {
@@ -248,8 +248,8 @@ output "outpost_network_acl_arn" {
 ################################################################################
 
 output "database_subnets" {
-  description = "List of IDs of database subnets"
-  value       = aws_subnet.database[*].id
+  description = "List of database subnets"
+  value       = aws_subnet.database
 }
 
 output "database_subnet_arns" {
@@ -317,8 +317,8 @@ output "database_network_acl_arn" {
 ################################################################################
 
 output "redshift_subnets" {
-  description = "List of IDs of redshift subnets"
-  value       = aws_subnet.redshift[*].id
+  description = "List of redshift subnets"
+  value       = aws_subnet.redshift
 }
 
 output "redshift_subnet_arns" {
@@ -371,8 +371,8 @@ output "redshift_network_acl_arn" {
 ################################################################################
 
 output "elasticache_subnets" {
-  description = "List of IDs of elasticache subnets"
-  value       = aws_subnet.elasticache[*].id
+  description = "List of elasticache subnets"
+  value       = aws_subnet.elasticache
 }
 
 output "elasticache_subnet_arns" {
@@ -425,8 +425,8 @@ output "elasticache_network_acl_arn" {
 ################################################################################
 
 output "intra_subnets" {
-  description = "List of IDs of intra subnets"
-  value       = aws_subnet.intra[*].id
+  description = "List of intra subnets"
+  value       = aws_subnet.intra
 }
 
 output "intra_subnet_arns" {
